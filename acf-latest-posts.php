@@ -120,7 +120,7 @@ class ACFLatestPosts {
 		<li>
 			<div class="wp-block-latest-posts__featured-image aligncenter">
 				<a target="_blank" href="<?php echo esc_url( get_the_permalink( $id ) ); ?>">
-					<?php echo get_the_post_thumbnail( $id ); ?>
+					<?php echo get_the_post_thumbnail( $id, 'thumbnail' ); ?>
 				</a>
 			</div>
 			<a target="_blank" href="<?php echo esc_url( get_the_permalink( $id ) ); ?>"><?php echo esc_html( get_the_title( $id ) ); ?></a>
